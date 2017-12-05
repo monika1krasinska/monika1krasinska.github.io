@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/monika.krasinska@o2.pl" method="POST">
+        <label for="imie">Imię</label>
+        <input type="text" name="imie" id="imie"><br />
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" name="nazwisko" id="nazwisko"><br />
+        <label for="e-mail">Email </label>
+        <input type="email" name="e-mail" id="e-mail"><br />
+        <label for="telefon">Telefon </label>
+        <input type="tel" name="telefon" id="telefon"><br />
+        <label for="Miasto">Miasto</label>
+        <select name="select" id="Miasto">
+                <option value="Miasto1">Kraków </option>
+                <option value="Miasto2">Warszawa</option>
+                <option value="Miasto3">Gdańsk</option>
+            </select><br />
+        <label >Płeć:</label>
+        <input type="hidden">
+        <label for="male">Mężczyzna</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Kobieta</label>
+        <input type="radio" name="gender" id="female" value="female"><br />
+        <input type="checkbox"> Wyrażam zgodę na przetwarzanie danych osobowych <br />
+        <label for="wiadomosc">Wiadomość </label><br />
+        <textarea name="wiadomosc" id="wiadomosc"></textarea><br />
+        <input type="submit" value="Wyslij"><br />
+    </form>
+
+</body>
+
+</html>
