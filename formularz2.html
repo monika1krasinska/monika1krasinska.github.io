@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="zadania-domowe/zadanie-1/formularz2.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/monika.krasinska@o2.pl" method="POST" autocomplete=on>
+        <h1><strong>A Simple Form</strong></h1>
+        <p><strong>Form Fundamental</strong></p>
+        <fieldset>
+            <legend>Customer Info:</legend>
+            Name: <input type="text" id="name" class="pole"                     placeholder="Enter your name" autofocus required><br> 
+            Telephone <input type="tel" id="telephone" class="pole"              placeholder="Pattern: 1-234-567-8910" required><br> 
+            Email address: <input type="email" id="email" class="pole"            placeholder="Enter your email address"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Books</legend>
+                    <input type="text" id=text class="pole"> 
+            Quantity (between 1 and 5): <input type="number"                        name="quantity" min="1" max="5" id=quantity                    class="pole">
+        </fieldset>
+                    <input type=submit value="Submit">
+
+    </form>
+</body>
+
+</html>

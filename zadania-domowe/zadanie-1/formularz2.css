@@ -1,0 +1,14 @@
+body {
+    display: inline-block;
+}
+.pole {
+    margin-top: 3ex;
+}
+h1 {
+    font-size: 3ex;
+    color:darkblue;
+}
+p {
+    font-style: italic;
+    color: lightblue;
+}
