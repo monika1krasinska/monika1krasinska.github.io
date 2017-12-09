@@ -4,27 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
+    <link rel=stylesheet href="css/style.css">
 </head>
 
 <body>
     <form action="https://formspree.io/monika.krasinska@o2.pl" method="POST">
-        <fieldset>
-            <legend>Formularz kontaktowy</legend>
-            Imię: <input type="text" name="imie" id="imie"><br /> Nazwisko: <input type="text" name="nazwisko" id="nazwisko"><br /> 
-            E-mail: <input type="email" name="e-mail" id="e-mail"><br /> 
-            Telefon: <input type="tel" name="telefon" id="telefon"><br /> Miasto: <select name="Miasto" id="Miasto">
-                    <option value="Krakow">Kraków </option>
-                    <option value="Warszawa">Warszawa</option>
-                    <option value="Gdansk">Gdańsk</option>
-                    </select><br /> 
-            Płeć: <label for="male">Mężczyzna</label>
-                    <input type="radio" name="gender" id="male" value="male">
-                    <label for="female">Kobieta</label>
-                    <input type="radio" name="gender" id="female" value="female"><br />
-                    <input type="checkbox"> Wyrażam zgodę na przetwarzanie danych osobowych <br /> 
-            Wiadomość: <textarea name="wiadomosc" id="wiadomosc">                    </textarea><br />
-                    <input type="submit" value="Wyslij"><br />
-        </fieldset>
+        <label for="name">Imię: </label>
+        <input type="text" name="name" id="name" required>
+        <label for="nazwisko">Nazwisko: </label>
+        <input type="text" name="nazwisko" id="nazwisko" required>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" required>
+        <label for="numer_telefonu">Numer telefonu: </label>
+        <input type="tel" name="numer_telefonu" id="numer_telefonu" required>
+        <label for="miasto"> Wybór miasta:</label>
+        <select id="miasto">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+        </select>
+        <label for="kobieta">Kobieta:
+            <input type="radio" name="plec" id="kobieta" value="kobieta" required></label>
+         <label for="mezczyzna">Mężczyzna:
+        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna" required></label>
+         <label for="zgoda">Zgoda na dane osobowe
+          <input type="checkbox" name="zgoda" id="zgoda">  
+        </label>
+        <label for="wiadomosc">Wiadomość:</label>
+        <textarea maxlength="1000" rows="5" name="wiadomosc" id="wiadomosc" required></textarea><br>
+        <input type="submit" value="Submit">
     </form>
 </body>
 

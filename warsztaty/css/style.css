@@ -1,0 +1,51 @@
+form {
+    background-color: #213b50;
+    width: 700px;
+    padding:20px;
+}
+label, select {
+    color:white
+}
+select [option] {
+    color:white;
+}
+input[type="text"],input[type="email"],input[type="tel"],textarea,form select {
+    background-color: #2b4a64;
+    width:300px;
+    height:25px;
+    outline: none;
+    border: 1px solid #213b50 ;
+}
+
+input[type="text"]:focus,input[type="email"]:focus, input[type="tel"]:focus,input[type="radio"]:focus, form textarea:focus,form select:focus {
+    background-color: #4e708c;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+}
+input[type=submit] {
+    background-color: green;
+        color:white;
+    padding: 10px 20px;
+    height: 40px;
+    border: 1px solid green;
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+input {
+    margin-bottom:20px;
+    height: 20px
+}
+form label {
+    display: block;
+}
+form input[type="checkbox"] {
+   float: left;
+}
+form select {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+label[for=wiadomosc] {
+    margin-top: 10px;
+}
+
