@@ -1,0 +1,53 @@
+
+@media all and (max-width: 991px) {
+    figure#photo2 {
+        display: none;   
+    }
+    figure#photo1 {
+        height:50vh;
+          width: 100%;
+        overflow: hidden;
+    }
+    figure#photo1 > figcaption {
+        position:absolute;
+        top:50vh;
+        width:93vw;
+        text-align: center;
+    }
+}
+@media all and (min-width: 991px ) and (max-width: 1170px)  {
+    figure#photo2 {
+        width:100%;
+     height: 70vh;
+    }
+    figure#photo1 {
+        display:none;
+    }
+   
+    figure#photo2 > figcaption {
+        position: absolute;
+        color:white;
+        font-size: 2vh;
+        top:7vh;
+        left:60vw;
+        text-align: left;
+        font-size: 0,5em;
+    }
+
+}
+@media all and (min-width: 1170px ) {
+    figure#photo1 {
+        min-height:100%;
+    }
+    figure#photo2 {
+        display:none;
+    }
+
+     figure#photo1 > figcaption {
+        position: absolute;
+        color:white;
+        top:40vh;
+        text-align: left;
+        font-size: 0,5em;
+         margin:50px;
+}

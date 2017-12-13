@@ -5,22 +5,38 @@
 @media all and (max-width: 480px) {
     figure {
         width:100%;
-        height:auto;
     }
 }
 @media all and (min-width: 481px ) and (max-width: 768px) {
     figure {
-        width:75%
+        width:100%
     }
 }
 @media all and (min-width: 769px ) and (max-width: 992px) {
     figure {
-        width:40%
+        width:49%
     }
 }
 @media all and (min-width: 993px) {
     figure {
-        width:30%
+        width:33%
     }
 }
 
+/*
+
+@media screen and (max-width:992px) {
+    figure {
+        width: 100%
+    }
+}
+@media screen and (max-width: 768px) {
+    figure {
+        width: 100%
+    }
+}
+@media screen and (max-width: 480px) {
+    figure {
+        width: 100%
+    }
+}*/
