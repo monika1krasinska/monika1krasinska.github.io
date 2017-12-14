@@ -11,8 +11,8 @@
     figure#photo1 > figcaption {
         position:absolute;
         top:50vh;
-        width:93vw;
         text-align: center;
+        width:100%;
     }
 }
 @media all and (min-width: 991px ) and (max-width: 1170px)  {
@@ -28,10 +28,10 @@
         position: absolute;
         color:white;
         font-size: 2vh;
-        top:7vh;
-        left:60vw;
+        top:9vh;
+       right:10vh;
         text-align: left;
-        font-size: 0,5em;
+       
     }
 
 }
@@ -48,6 +48,6 @@
         color:white;
         top:40vh;
         text-align: left;
-        font-size: 0,5em;
+        font-size: 2vh;
          margin:50px;
 }
