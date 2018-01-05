@@ -90,15 +90,9 @@
     }
     .contact-form {
         float: none;
+        width: 100%;
         
     }
-   #form {
-        display: inline-block;
-
-    }
-    #form {
-        text-align: center;
-        width: 100%;
-    }
+   
 }
 
