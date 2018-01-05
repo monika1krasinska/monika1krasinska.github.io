@@ -60,8 +60,45 @@
         }
         h2{
             font-size:1,5em;
-        }}
+        }
+        #contact > .contact-data > h2 {   text-align: center;
+    }
+        
+}
+ #about > article > p {
+        text-align: center;
+    }
+    #contact > .contact-data > address {
+        text-align: center;
+    }
+    #contact > .contact-data > h2 {   text-align: center;
+    }
+}
 @media all and (max-width : 576px) {
-    section { padding: 0 10px 30px;
-    } }
+    section { 
+        padding: 0 10px 30px;
+        
+    } 
+    #about > article > p {
+        text-align: center;
+    }
+    #contact > .contact-data > address {
+        text-align: center;
+    }
+    #contact > .contact-data > h2 {
+        text-align: center;
+    }
+    .contact-form {
+        float: none;
+        
+    }
+   #form {
+        display: inline-block;
+
+    }
+    #form {
+        text-align: center;
+        width: 100%;
+    }
+}
 
