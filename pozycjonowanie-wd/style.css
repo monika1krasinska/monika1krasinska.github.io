@@ -1,0 +1,25 @@
+body {
+    background-color: aqua;
+}
+p{
+    background-color:green;
+}
+span{
+    background-color:red;
+    
+}
+#relatywny {
+    position:relative;
+    top:40px;
+    left:100px;
+    background-color: blue;
+}
+#kontener {
+    position: relative;
+    background-color:darkorange;
+}
+#absolutny {
+    position:absolute;
+    background-color: blueviolet;
+    top: 50px;
+}

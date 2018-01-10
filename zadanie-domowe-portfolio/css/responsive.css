@@ -94,5 +94,12 @@
         text-align: center;
     }
    
+    #form{
+        width: 50%;
+        margin: auto;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
 }
 
