@@ -1,12 +1,13 @@
 
-* { 
-    box-sizing:border-box; 
+* {
+    box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
-    color:#777777;
-  
+    color: #777777;
+
 }
 
 
@@ -15,95 +16,104 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    color:white;
+    color: white;
     text-align: center;
     position: relative;
-    
-    
 }
+
 #main-nav .collapse {
     margin-right: 90px;
 }
-#main-nav  a.navbar-brand {
-    color:white;
+
+#main-nav a.navbar-brand {
+    color: white;
     font-family: 'Droid Serif', sans-serif;
-    font-size:2rem;
-    padding:15px;
+    font-size: 2rem;
+    padding: 15px;
     margin-left: 100px;
 }
+
 #main-nav a.nav-link {
-    color:white;
-    font-family:'Montserrat', sans-serif;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     transition: all .3s;
-    padding:15px 15px;
+    padding: 15px 15px;
 }
 
 #main-nav .nav-item a:hover {
-    color:#0ed8d6;
+    color: #0ed8d6;
 }
+
 #main-nav.scroll .nav-item a:hover {
-    color:#777;
+    color: #777;
 }
 
 .button-header {
     background-color: #0ed8d6;
-    color:white;
-   font-size: 15px;
-    padding:15px 40px; 
-    font-style:bold;
+    color: white;
+    font-size: 15px;
+    padding: 15px 40px;
+    font-style: bold;
     font-weight: bold;
 }
-.button-header:hover{
+
+.button-header:hover {
     background-color: white;
-    color:#0ed8d6;
+    color: #0ed8d6;
 }
+
 .main-header-content {
     position: absolute;
     transform: translate(-50%, -50%);
-    top:50%;
-    left:50%;
-    
+    top: 50%;
+    left: 50%;
+
 }
+
 #main-header .main-header-content h1 {
-    font-size:3.6rem;
-    font-family:'Montserrat',sans-serif;
-    padding:20px 30px;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 30px;
 }
+
 #main-header .main-header-content h2 {
-    font-family:'Droid Serif', sans-serif;
-    font-size:2.6rem;
-     padding:20px 30px;
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 2rem;
+    padding: 20px 30px;
 }
+
 #main-header .header-mask {
     position: absolute;
     height: 100%;
-    width:100%;
-    background-color: black;
-    opacity: 0.8;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
+
 #services .main-header-services {
-    color:#333;
-    font-weight:bold;
+    color: #333;
+    font-weight: bold;
     padding: 5px;
     margin-top: 100px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
 #services .p-header-services {
     font-style: italic;
     margin-bottom: 70px;
-    font-family:'Droid Serif', sans-serif;
+    font-family: 'Droid Serif', sans-serif;
 }
 
 #services .container-services .circle {
     background-color: #0ed8d6;
-    border-radius: 80%;
+    border-radius: 100%;
     width: 80px;
     height: 80px;
     position: relative;
     border: 1px solid #0ed8d6;
-    transition: all 0.1s;
+    transition: all 0.3s;
     text-align: center;
-    margin:6px auto;
+    margin: 6px auto;
 
 }
 
@@ -113,17 +123,419 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-     transition: all 0.1s;
+    transition: all 0.3s;
 }
- 
-}
+
+
 #services .container-services .circle:hover {
-    background-color:white;
-    color:#0ed8d6;
+    background-color: white;
+    color: #0ed8d6;
+    transform: rotate(360deg)
 }
-       
+
 
 #services .container-services .circle:hover .fa {
-    background-color:white;
-        color:#0ed8d6;
+    background-color: white;
+    color: #0ed8d6;
+}
+
+.services-title {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+
+}
+
+.services-text {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #777;
+    font-size: 15px;
+}
+
+#portfolio {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#portfolio .main-header-portfolio {
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+#portfolio .p-header-portfolio {
+    font-style: italic;
+    font-family: 'Droid Serif', sans-serif;
+    margin-bottom: 70px;
+}
+
+#portfolio-item-1 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+
+
+
+
+}
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+
+}
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+
+
+}
+
+#portfolio-item-4 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+
+
+}
+
+#portfolio-item-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+
+
+}
+
+#portfolio-item-6 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+
+
+}
+
+.portfolio-item {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*    margin-bottom: 200px;*/
+}
+
+.title-container {
+    background-color: white;
+    height: 110px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-title {
+    font-weight: bold;
+    margin: 5px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio-title2 {
+    font-style: italic;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.portfolio-mask {
+    background-color: rgba(14, 216, 214, 0);
+    /*    opacity:0;*/
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.portfolio-mask:hover {
+    background-color: rgba(14, 216, 214, 0.5);
+}
+
+.portfolio-mask .fa {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.portfolio-mask:hover .fa {
+    color: white;
+    opacity: 0.9;
+
+}
+
+#team {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#team .main-team {
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#team .p-team {
+    font-style: italic;
+    font-family: 'Droid Serif', sans-serif;
+    margin-bottom: 100px;
+}
+
+#team-item-1 {
+    background-image: url(../img/team/man-1.jpg)
+}
+
+#team-item-2 {
+    background-image: url(../img/team/man-2.jpg)
+}
+
+#team-item-3 {
+    background-image: url(../img/team/woman-1.jpg)
+}
+
+.team-item {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 100%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.team-title {
+    font-weight: bold;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.team-title2 {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #777;
+    font-size: 15px;
+}
+
+.team-circle {
+    background-color: #222;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    /*    transition: all 0.3s;*/
+    text-align: center;
+    margin: 6px auto;
+    display: inline-block;
+}
+
+.team-circle .fa {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-circle:hover {
+    background-color: #0ed8d6;
+
+}
+
+
+.team-circle:hover .fa {
+    background-color: #0ed8d6;
+    color: white;
+}
+
+.scroll {
+    background-color: #0ed8d6;
+   
+}
+
+.team-last-p {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #777;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
+    line-height: 30px;
+}
+#contact {
+    background-image: url(../img/footer/world-map.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+text-align: center;
+position: relative;
+color:white;
+
+}
+
+.contact-mask {
+/*    position: absolute;*/
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.contact-header {
+    margin-top: 100px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.p-contact {
+    font-style: italic;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.container-contact {
+    margin-top: 40px;
+
+}
+
+.form-control {
+    margin: 20px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px;
+}
+
+#exampleFormControlTextarea1 {
+    height: 220px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: darkgray;
+    font-size: 15px;
+}
+
+/* WebKit, Blink, Edge */
+
+.form-control:-moz-placeholder {
+    color: darkgray;
+    font-size: 15px
+}
+
+/* Mozilla Firefox 4 to 18 */
+
+.form-control::-moz-placeholder {
+    color: darkgray;
+    font-size: 15px
+}
+
+/* Mozilla Firefox 19+ */
+
+.form-control:-ms-input-placeholder {
+    color: darkgray;
+    font-size: 15px
+}
+
+/* Internet Explorer 10-11 */
+
+.form-control::-ms-input-placeholder {
+    color: darkgray;
+    font-size: 15px
+}
+
+.submit-contact {
+    background-color: #0ed8d6;
+    color: white;
+    font-size: 20px;
+    padding: 15px 60px;
+    font-style: bold;
+    font-weight: bold;
+
+}
+
+.submit-contact:hover {
+    background-color: white;
+    color: #0ed8d6;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+    
+}
+
+.footer-title {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-top: 20px;
+    color: #777;
+
+
+}
+
+.footer-terms {
+    font-weight: bold;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 10px;
+    color: #777;
+
+}
+
+.footer-p {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.footer-circle {
+    background-color: #222;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: all 0.3s;
+    text-align: center;
+    margin: 10px auto;
+    display: inline-block;
+    margin-right: 5px;
+
+
+}
+
+.footer-circle .fa {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.footer-circle:hover {
+    background-color: #0ed8d6;
+
+}
+
+
+footer-circle:hover .fa {
+    background-color: #0ed8d6;
+    color: white;
 }
