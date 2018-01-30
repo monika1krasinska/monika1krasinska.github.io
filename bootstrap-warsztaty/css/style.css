@@ -362,8 +362,9 @@ body {
     color: white;
 }
 
-.scroll {
+#main-nav.scroll {
     background-color: #0ed8d6;
+    opacity: 0.5;
    
 }
 
@@ -378,12 +379,13 @@ body {
 }
 #contact {
     background-image: url(../img/footer/world-map.jpg);
-    height:100vh;
+    height:100%;
     background-size: cover;
     background-position: center;
 text-align: center;
 position: relative;
 color:white;
+   
 
 }
 
@@ -392,6 +394,7 @@ color:white;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+     
 
 }
 
@@ -408,8 +411,12 @@ color:white;
 }
 
 .container-contact {
-    margin-top: 40px;
+    margin-top: 50px;
 
+}
+.contact-container{
+    margin-top:10px;
+    padding-top: 10px;
 }
 
 .form-control {

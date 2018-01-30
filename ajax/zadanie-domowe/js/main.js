@@ -14,3 +14,4 @@ $(function () {
     var przycisk = document.getElementById("przycisk");
     przycisk.onclick = pobierzDane;
 })
+ $('header').text("<h2> To jest nagłówek</h2>");

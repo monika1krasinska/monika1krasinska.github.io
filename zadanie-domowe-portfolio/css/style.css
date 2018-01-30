@@ -1,226 +1,280 @@
-/*General styles - start */
-* {  box-sizing:border-box; 
+/*General styles -start*/
+
+* {
+    box-sizing: border-box;
 }
+
+/*ustalamy że zdjęcie będzie miało 200px, pomimo dodania marginesu, albo padding do zdjęcia, wtedy zdjęcie zostanie automatycznie zmniejszone, tak aby razem wyszło 200px*/
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
-    color:#291f1a;
-    font-weight: 300; 
+    font-family: 'Lato', 'sans-serif';
+    color: #291f1a;
+    font-weight: 300;
 }
+
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
 section {
     padding: 0 80px 100px;
-    width:100%;
+    width: 100%;
+}
 
+p {
+    line-height: 25px;
 }
-#drop {
-    display: none;
-}
-.toggle {
-    display: none;
-}
-    /*General styles - end */
-/********** Styles ***********/
-/*Navigation-start*/
-/*Menu-start */
+
+/*General styles -end*/
+
+/*Nawigation -start*/
+
+
+
 nav#main-nav {
     width: 100%;
     position: fixed;
-    top:0;
-    right:0;
-    background-color: #fff;
+    top: 0;
+    right: 0;
+    background-color: white;
     font-weight: 300;
-    font-size: 20px;
-     z-index: 999; 
+    /*    powoduje że warstwa będzie zawsze na górze*/
+    z-index: 999;
+    
 }
-nav#main-nav > ul {
+
+#drop {
+    display: none;
+}
+
+#main-nav .toggle {
+    display: none;
+}
+
+#main-nav > ul {
     float: right;
-    margin:0;
-
+    /* przesunie nam element w prawo */
+    margin: 0;
 }
-nav#main-nav > ul > li {
+
+#main-nav > ul > li {
     display: inline-block;
+    list-style: none;
     padding: 20px 40px;
-}
-nav#main-nav > ul > li > a {
-    text-decoration: none;
-    color: #1ac056;
-}
-#main-nav > ul > li > a:hover{
-    color:#291f1a;
+    /*    odsunie nam 20px w dól i w górę oraz 40px w lewo i prawo, natomiast margines odsunie nam px od strony okna przeglądarki*/
 }
 
-/*Menu -end*/
+#main-nav > ul > li > a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #1ac056;
+    font-weight: 300;
+}
+
+#main-nav > ul > li > a:hover {
+    color: #291f1a;
+}
+
+
+
+ 
+
+/*Nawigation -end*/
+
+
+
+
+/*Header -start*/
 
 #main-header {
     background-image: url("../img/header-background.jpg");
-    height:100vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    color:white;
+    color: white;
 }
-#main-header .main-header-content  h1 {
-    font-weight: 50;
-    font-family: "Roboto", sans-serif;
-    font-size: 6em;
-    padding:0;
 
+#main-header .main-header-content {
+    text-align: center;
+    padding: 30vh;
 }
-.main-header-content {
-    padding:20vh;
+
+#main-header .main-header-content h1 {
+    font-weight: 300;
+    font-family: "Roboco", sans-serif;
+    font-size: 4em;
+    padding: 0;
     text-align: center;
 }
 
-
-#main-header .main-header-content  h1 span {
-    color:#1ac056;
-    font-weight: 400;   
-}
-    
 #main-header .main-header-content h2 {
-    font-weight: 100;
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0;
     text-align: center;
-    padding:0;
+}
+
+#main-header .main-header-content h1 span {
+    color: #1ac056;
+    padding: 0;
+    text-align: center;
+    
+}
+
+/*Header -end*/
+
+
+
+
+/*Sekcja About -start*/
+
+#about {
+    padding: 0 80px 100px;
+    width: 100%; 
+    background-color: #f9fcfe;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    overflow: hidden;
+   }
+
+
+#about figure {
+    margin:0;
+    float:left;
+    width: 50%;
+    text-align: center;
+}
+
+#about > figure > img {
+    max-height: 350px;
+    max-width: 100%;
+    border: 15px solid white;
+    border-radius: 30px;
     }
 
 
-/*O mnie -start*/
-#about {
-    background-color: #f9fcfe;
-    overflow: hidden;
-    width: 100%;
-    font-size: 2em;
-    font-weight: 300;
-    margin-top: 60px;
-    margin-bottom: 35px;
-}
-#about > figure {
-    width:50%;
-    margin:0;
-    float: left;
-}
-#about > figure {
-    text-align: center;
-}
-#about > figure > img {
-    max-width: 350px;
-    margin: 0;
-    border-radius: 30px;
-    
-}
-#about > article {
+
+#about  h3 {
     width: 50%;
     float: left;
-  
-}
-#about > article > p {
-    margin: 0 auto;
-}
-#about > h2 {
-    text-align: center;
-    font-weight: 100;
-}
+    font-size: 20px;
+    text-align: left;
+    font-weight: 300;
+    }
+
 #about > h2 > span {
     color: #1ac056;
-    font-weight: 400;
 }
-/*O mnie -end*/
 
-/*Moje umiejetnosci-start*/
+/*Sekcja About -end*/
 
-#skills {
-    font-size: 2em;
-    font-weight: 300;
-    margin-top: 60px;
-    margin-bottom: 35px;
-}
-#skills > h2 {
-    text-align: center;
-    font-weight: 100;
-}
-#skills > h2 > span {
-    color: #1ac056;
-    font-weight: 500;
-}
-#skills > article >p {
+
+
+
+
+
+/*Sekcja Skills -start*/
+
+#skills-icons {
     text-align: center;
 }
-#skill-icons > figure {
+
+#skills-icons > figure {
     display: inline-block;
-}
-#skill-icons {
     text-align: center;
 }
-/*Moje umiejetnosci-end*/
 
-/*Moje portfolio -start*/
-#portfolio-items {
+#skills-icons > figcaption {
+    text-align: center;
+}
+
+#skills > p {
+    text-align: center;
+}
+
+/*Sekcja Skills -end*/
+
+
+
+
+
+
+/*Sekcja Portfolio start*/
+
+#portfolio {
     width: 100%;
-    margin:0;
-    display: inline-block;
-    padding: 0;
-}
-#portfolio > h2 {
-    text-align: center;
-    font-size: 3em;
-    font-weight: 300;
-}
-#portfolio > h2 > span {
-    color: #1ac056;
-    font-weight: 400;
-}
+    height: 100%;
+  }
+
 #portfolio-item-1 {
     background-image: url(../img/portfolio1.jpg);
 }
+
 #portfolio-item-2 {
     background-image: url(../img/portfolio2.jpg);
 }
+
 #portfolio-item-3 {
     background-image: url(../img/portfolio4.jpg);
 }
 
 .portfolio-item {
-    height: 400px;
+    height: 350px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: inline-block;
     width: 33%;
-    width: 33%;
     position: relative;
-    padding:0;
-  
+    padding: 0;
+    
+    
 }
+
+
 .portfolio-items {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    font-size: 0;
-    }
+/*    font-size: 0;*/
+    
+}
 
 
-#portfolio #portfolio-items .portfolio-item .item-mask {
-   background-color:  rgba(42, 61, 79, 0.8);
+#portfolio .portfolio-items .portfolio-item .item-mask {
+    background-color: rgba(42, 61, 79, 0.8);
     width: 100%;
     height: 100%;
     opacity: 0;
     transition: all 0.3s ease-in-out;
     position: absolute;
-    font-size: 20px;
-        }
+    font-size: initial;
+}
 
-#portfolio #portfolio-items .portfolio-item .item-mask:hover {
+#portfolio .portfolio-items .portfolio-item .item-mask:hover {
     opacity: 1;
 }
 
-#portfolio #portfolio-items .portfolio-item .item-mask .item-content {
-    height: 380px;
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content {
+    height: 330px;
     border: 1px solid #fff;
     margin: 10px;
     position: relative;
     text-align: center;
 }
 
-#portfolio #portfolio-items .portfolio-item .item-mask .item-content .item-content-inner {
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner {
     color: #fff;
     position: absolute;
     top: 50%;
@@ -230,125 +284,130 @@ nav#main-nav > ul > li > a {
     padding: 5px;
 }
 
-#portfolio #portfolio-items .portfolio-item .item-mask .item-content .item-content-inner i {
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a {
     color: #fff;
+
 }
 
-#portfolio #portfolio-items .portfolio-item .item-mask .item-content .item-content-inner i:hover{
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner i:hover {
     color: #1ac056;
 }
 
 
-/*Moje portfolio-end*/
+/*sekcja portfolio end*/
 
-/*Stopka kontaktowa-start*/
+
+
+
+
+
+/*Sekcja Contact -start*/
 
 #contact {
-    font-size: 25px;
-    margin-top: 60px;
-   margin-bottom: 0;
-    padding-left:100px;
-    padding-top: 50px;
     background-color: #213b50;
     color: #fff;
-    width:100%;
-    height:100%;
-    
     overflow: hidden;
+    height: 100%;
+    margin-top: 50px;
+    
+    
+
+    
 }
 
-.contact-data{
+#contact .contact-data {
     width: 50%;
     float: left;
 }
-.contact-data > h2 {
+
+
+
+#contact .contact-data h2 {
     text-align: left;
     font-size: 38px;
-    font-weight: 250;
-}
-.contact-data > h2 >span {
-    color:  #1ac056;
-}
-.contact-data > address {
-    font-style: normal;
-    line-height: 45px;
-    margin: 72px 0;
 }
 
-.contact-data > address > p > a {
-    color:#1ac056;
+
+#contact .contact-data address {
+    font-style: normal;
+    margin: 72px 0;
+    line-height: 25px;
 }
-.contact-form {
-    width: 50%;
-    float: right;
-    margin-top: 100px;
-    color: #fff;
+
+#contact .contact-data address a {
+    color: #1ac056;
 }
-#form {
-    width: 100%;
-}
-#form > input {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 0 #2b4a64 ;
-    background-color: #2b4a64;
-    color:#fff;
-}
-.contact-social-icons > a > i {
-    color:#fff;
+
+#contact .contact-social-icons a {
     display: inline-block;
-    width:38px;
-    height:38px;
-    margin-right: 20px;
+    width: 38px;
+    height: 38px;
+    margin-right: 30px;
     text-align: center;
     line-height: 38px;
     border: 1px solid #fff;
-    font-size:22px;
+    font-size: 22px;
+    color: #fff;
 }
-.contact-social-icons > a > i:hover {
-    background-color: #fff;
-    color:#213b50;
+
+#contact .contact-social-icons a:hover {
+    border: 1px solid #213b50;
+    color: #213b50;
+  
+    background-color: #1ac056;
 }
-textarea {
- height: 100px;
-     width: 100%;
+
+#contact .contact-form {
+    margin-top: 100px;
+    width: 50%;
+    float: left;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
     padding: 15px;
     margin-bottom: 15px;
-    border: 0 #2b4a64 ;
+    border: 0 #2b4a64;
     background-color: #2b4a64;
-    color:#fff;
 }
-textarea:focus {
-    background-color: #426684 ;
+
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    background-color: #426684;
 }
-.contact-form > #form > input[type="text"]:focus {
-   background-color: #426684 ; 
-}
-.contact-form > #form > input[type="email"]:focus {
-   background-color: #426684 ; 
-}
-.contact-form > #form > input[type="submit"] {
+
+input[type="submit"] {
     width: auto;
     padding: 15px 30px;
     float: right;
     text-transform: uppercase;
-    border: 1 px solid #1ac056;
+    border: 1px solid #1ac056;
     background-color: #1ac056;
-    color:#fff;
+    color: #fff;
     font-weight: 600;
-}
-.contact-form > #form > input[type="submit"]:hover {
+    }
+
+input[type="submit"]:hover {
     background-color: #fff;
     color: #1ac056;
 }
-footer {
+
+/*Sekcja Contact -koniec*/
+
+
+
+
+/*Sekcja Footer start*/
+
+#footer {
     background-color: #142634;
-    padding:0 80px;
-    margin:0;
+    padding: 0 80px;
 }
-footer > p {
-    margin:0;
-    color:#fff;
+
+#footer p, i {
+    color:white;
+    margin: 0;
+    text-align: left;
+    font-size:16px;
 }
-/*Stopka kontaktowa-end*/
+    

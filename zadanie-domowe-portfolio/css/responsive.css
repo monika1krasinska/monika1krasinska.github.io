@@ -1,110 +1,122 @@
-@media all and (max-width : 1200px) {
+@media all and (max-width: 1200px){
     .portfolio-item {
-        width:49%;
-       
+        width: 49%;
     }
     .portfolio-item:last-child {
-        width:100%;
-    }
-}
-    @media all and (max-width : 992px) {
-        #main-nav > #drop:checked + ul {
-            display: block;
-        }
-        .toggle {
-            display: block;
-            background-color: #fff;
-            padding: 0 20px;
-            color: #1ac056;
-            font-size: 20px;
-            line-height: 60px;
-            text-decoration: none;
-            border: none;
-            text-align: right;
-        }
-        #main-nav > ul {
-            display: none;
-        }
-        #main-nav > ul >  li {
-            display: block;
-            width: 100%;
-            padding:20px;
-            text-align: right;
-        }
-        #about > figure {
-            width:100%;
-        }
-        #about  > figure > img{
-            max-height: inherit;
-        }
-        #about > article {
-            width:100%;
-        }
-        .main-header-content {
-             padding:10%;
-        }
-        .contact-data {
-            width:100%;
-            text-align: center;
-        }
-        #contact > .contact-social-icons > a > i {
-            margin: 0;
-        }
-        
-}
-    @media all and (max-width : 768px){
-        section {padding:0 40px 50px;
-        }
-        h1 {
-            font-size:3em;
-        }
-        h2{
-            font-size:1,5em;
-        }
-        #contact > .contact-data > h2 {   text-align: center;
-    }
-        
-}
- #about > article > p {
-        text-align: center;
-    }
-    #contact > .contact-data > address {
-        text-align: center;
-    }
-    #contact > .contact-data > h2 {   text-align: center;
-    }
-}
-@media all and (max-width : 576px) {
-    section { 
-        padding: 0 10px 30px;
-        
-    } 
-    #about > article > p {
-        text-align: center;
-    }
-    #contact > .contact-data > address {
-        text-align: center;
-    }
-    #contact > .contact-data > h2 {
-        text-align: center;
-    }
-    .contact-form {
-        float: none;
         width: 100%;
-        text-align: center;
     }
-   
-    #form{
-        width: 100%;
-        margin: auto;
-       
-    }
-    .contact-form {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-        
-    }
- 
 }
 
+@media all and (max-width: 992px){
+    #main-nav > #drop:checked + ul {
+        display: block;
+    }
+    
+    
+    #main-nav .toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    #main-nav > ul{
+        display: none;
+    }
+    
+    #main-nav > ul > li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+    
+    
+/*
+    .main-header-content {
+        padding: 10%;
+    }
+*/
+    #about figure {
+        width: 100%;
+        
+        
+        }
+    #about > figure > img{
+        max-height: inherit;
+    }
+    
+    #about h3 {
+    width: 100%;  
+    text-align: center;
+        }
+    
+    
+    .porfolio-item {
+        width: 100%;
+        
+    }
+    
+     #contact .contact-data {
+        width: 100%;
+        text-align: center;
+    
+    }
+    #contact .contact-data h2 {
+        text-align: center;
+        
+    }
+    #contact .contact-form {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    #contact .contact-social-icons a {
+        margin: 0; 
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    }
+        
+
+
+@media all and (max-width: 768px){
+   section  {
+        padding: 0 40px 50px;
+            } 
+    
+    #main-header .main-header-content h1 {
+       font-size: 3em;
+       
+}
+    #main-header .main-header-content h2 {
+        font-size: 1.5em;
+}
+      
+  #about  h3 {
+        text-align: center;
+    }
+}
+
+
+@media all and (max-width: 576px){
+    section { padding: 0 10px 30px;}
+/*
+    .main-header-content {
+        padding: 5vh;
+    }
+*/
+    #about  h3 {
+        text-align: center;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
+
+ 
