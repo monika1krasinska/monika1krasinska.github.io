@@ -44,8 +44,13 @@
     #about figure {
         width: 100%;
         
-        
+    
         }
+    #about article{
+        text-align: center;
+        float:none;
+        width: 100%;
+    }
     #about > figure > img{
         max-height: inherit;
     }
@@ -116,7 +121,7 @@
     .portfolio-item {
         width: 100%;
     }
+     .portfolio-items {
+        width: 100%;
+    }
 }
-
-
- 
