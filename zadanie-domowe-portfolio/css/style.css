@@ -283,18 +283,20 @@ nav#main-nav > ul > li > a {
 
 #contact .contact-data address a {
     color: #1ac056;
+    
 }
 
 #contact .contact-data .contact-social-icons a i{
     display: inline-block;
     width: 38px;
     height: 38px;
-    margin-right: 20px;
+    margin-right: 10px;
     text-align: center;
     line-height: 38px;
     border: 1px solid #fff;
     font-size: 22px;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 #contact .contact-data .contact-social-icons a:hover {

@@ -105,6 +105,12 @@
   #about  h3 {
         text-align: center;
     }
+      .portfolio-item {
+        width: 100%;
+    }
+     .portfolio-items {
+        width: 100%;
+    }
 }
 
 
@@ -118,10 +124,5 @@
     #about  h3 {
         text-align: center;
     }
-    .portfolio-item {
-        width: 100%;
-    }
-     .portfolio-items {
-        width: 100%;
-    }
+  
 }
