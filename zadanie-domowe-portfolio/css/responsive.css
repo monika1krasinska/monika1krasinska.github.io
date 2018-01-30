@@ -80,11 +80,11 @@
         text-align: center;
         float: none;
     }
-    #contact .contact-social-icons a {
-        margin: 0; 
-        margin-right: 20px;
+    .contact-social-icons  {
+         
         margin-bottom: 20px;
     }
+   
     }
         
 
@@ -111,11 +111,14 @@
      .portfolio-items {
         width: 100%;
     }
+
+
 }
 
 
 @media all and (max-width: 576px){
-    section { padding: 0 10px 30px;}
+    section { padding: 0 10px 30px;
+    }
 /*
     .main-header-content {
         padding: 5vh;
@@ -124,5 +127,8 @@
     #about  h3 {
         text-align: center;
     }
-  
+   .portfolio-item {
+        width: 100%;
+    }
+
 }
