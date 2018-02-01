@@ -1,0 +1,59 @@
+
+@media all and (max-width: 992px){
+
+
+    
+    
+     #contact .contact-data {
+       
+        text-align: center;
+    
+    }
+    #contact .contact-data h2 {
+        text-align: center;
+        
+    }
+    
+    .contact-social-icons  {
+         
+        margin-bottom: 20px;
+    }
+   
+    }
+        
+
+
+@media all and (max-width: 768px){
+   section  {
+        padding: 0 40px 50px;
+            } 
+    
+    #main-header .main-header-content h1 {
+       font-size: 3em;
+       
+}
+    #main-header .main-header-content h2 {
+        font-size: 1.5em;
+}
+      
+  #about  h3 {
+        text-align: center;
+    }
+
+
+}
+
+
+@media all and (max-width: 576px){
+    section { padding: 0 10px 30px;
+    }
+/*
+*/
+    #about  h3 {
+        text-align: center;
+    }
+   .portfolio-item {
+        width: 100%;
+    }
+   
+}
