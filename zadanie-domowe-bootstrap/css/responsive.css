@@ -18,7 +18,17 @@
          
         margin-bottom: 20px;
     }
-   
+    #about figure {
+        width: 100%;
+        max-height: inherit;
+    }
+    #about figure img {
+    height:50%;
+
+      
+    
+        
+    }
     }
         
 
@@ -39,6 +49,7 @@
   #about  h3 {
         text-align: center;
     }
+   
 
 
 }
