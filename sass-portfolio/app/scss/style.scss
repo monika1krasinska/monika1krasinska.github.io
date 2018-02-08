@@ -1,5 +1,5 @@
-@import 'zmienne';
-@import 'mixin';
+@import '_zmienne';
+@import '_mixin';
 
 * {
     box-sizing: border-box;
@@ -34,13 +34,12 @@ body {
                     font-family: 'Montserrat', sans-serif;
                     transition: all .3s;
                     padding: 15px 15px;
-                }
-                a {
                     &:hover {
                         color: $blue;
                     }
-                }
 
+
+                }
             }
         }
     }
@@ -48,21 +47,16 @@ body {
 }
 
 #main-nav.scroll {
-    background-color: $blue;
-    opacity: 0.5;
+    background-color: rgba(14, 216, 214, 0.5);
     #navbarSupportedContent {
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: $white;
-                    font-family: 'Montserrat', sans-serif;
-                    transition: all .3s;
-                    padding: 15px 15px;
-                    a {
-                        &:hover {
-                            color: $dark-grey;
-                        }
+
+                    &:hover {
+                        color: $dark-grey;
                     }
+
                 }
             }
         }
@@ -212,57 +206,52 @@ body {
         @include droid;
         margin-bottom: 70px;
     }
-    .container-portfolio {
-        .row-portfolio {
-            .portfolio-col {
-
-                .portfolio-item {
-                    height: 200px;
-                    background-size: cover;
-                    background-position: center;
-                    position: relative;
-                    /*    margin-bottom: 200px;*/
-                    .portfolio-mask {
-                        background-color: rgba(14, 216, 214, 0);
-                        /*    opacity:0;*/
-                        height: 100%;
-                        width: 100%;
-                        position: absolute;
-                        .fa {
-                            color: $white;
-                            position: absolute;
-                            left: 50%;
-                            top: 50%;
-                            transform: translate(-50%, -50%);
-                            opacity: 0;
-                        }
-                        &:hover {
-                            background-color: rgba(14, 216, 214, 0.5);
-                            .fa {
-                                color: $white;
-                                opacity: 0.9;
-                            }
-                        }
 
 
-                    }
-                }
-                .title-container {
-                    background-color: $white;
-                    height: 110px;
-                    padding-top: 20px;
-                    padding-bottom: 30px;
-                    margin-bottom: 30px;
-                    .portfolio-title {
-                        @include montserrat;
-                        margin: 5px;
-
-                    }
-                    .portfolio-title2 {
-                        @include droid;
-                    }
+    .portfolio-item {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        /*    margin-bottom: 200px;*/
+        .portfolio-mask {
+            background-color: rgba(14, 216, 214, 0);
+            /*    opacity:0;*/
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            .fa {
+                color: $white;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+            &:hover {
+                background-color: rgba(14, 216, 214, 0.5);
+                .fa {
+                    color: $white;
+                    opacity: 0.9;
                 }
             }
+
+
+        }
+    }
+    .title-container {
+        background-color: $white;
+        height: 110px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        .portfolio-title {
+            @include montserrat;
+            margin: 5px;
+
+        }
+        .portfolio-title2 {
+            @include droid;
         }
     }
 }
@@ -481,62 +470,61 @@ body {
     margin-top: 20px;
     margin-bottom: 0;
     .footer-container {
-       
-            .footer-row {
-                .col-footer1 {
-                    .footer-copywright {
-                        .footer-title {
-                            @include montserrat;
-                            font-size: 10px;
-                            margin-top: 20px;
-                        }
-                    }
-                }
-                .col-footer2 {
-                    .social-icons-container {
-                        .footer-circle {
-                            background-color: #222;
-                            border-radius: 100%;
-                            width: 40px;
-                            height: 40px;
-                            position: relative;
-                            transition: all 0.3s;
-                            text-align: center;
-                            margin: 10px auto;
-                            display: inline-block;
-                            margin-right: 5px;
-                            &:hover {
-                                background-color: $blue;
-                                .fa {
-                                    background-color: $blue;
-                                    color: $white;
-                                }
-                            }
-                            .fa {
-                                color: $white;
-                                position: absolute;
-                                left: 50%;
-                                top: 50%;
-                                transform: translate(-50%, -50%);
 
-                            }
-                        }
-                    }
-                }
-                .col-footer3 {
-                    .footer-terms {
+        .footer-row {
+            .col-footer1 {
+                .footer-copywright {
+                    .footer-title {
                         @include montserrat;
                         font-size: 10px;
-                        .footer-p {
-                            display: inline-block;
-                            margin-left: 10px;
-                            margin-top: 20px;
-                        }
-
+                        margin-top: 20px;
                     }
-                
+                }
+            }
+            .col-footer2 {
+                .social-icons-container {
+                    .footer-circle {
+                        background-color: #222;
+                        border-radius: 100%;
+                        width: 40px;
+                        height: 40px;
+                        position: relative;
+                        transition: all 0.3s;
+                        text-align: center;
+                        margin: 10px auto;
+                        display: inline-block;
+                        margin-right: 5px;
+                        &:hover {
+                            background-color: $blue;
+                            .fa {
+                                background-color: $blue;
+                                color: $white;
+                            }
+                        }
+                        .fa {
+                            color: $white;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+
+                        }
+                    }
+                }
+            }
+            .col-footer3 {
+                .footer-terms {
+                    @include montserrat;
+                    font-size: 10px;
+                    .footer-p {
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-top: 20px;
+                    }
+
+                }
+
             }
         }
     }
 }
-
