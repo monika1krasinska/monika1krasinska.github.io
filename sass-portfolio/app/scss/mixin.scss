@@ -1,0 +1,17 @@
+@mixin montserrat{
+    font-weight:bold;
+    color:#333;
+    font-family:'Montserrat', sans-serif;
+}
+@mixin droid{
+    font-style:italic;
+    font-family:'Droid Serif', sans-serif;
+}
+@mixin roboto {
+     font-family: 'Roboto Slab', sans-serif;
+    color: #777;
+}
+@mixin placeholder{
+    color: darkgray;
+  font-size: 15px;
+}
