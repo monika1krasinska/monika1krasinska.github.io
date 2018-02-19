@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#main-nav .navbar-toggler {
+  border-color: transparent;
+  color: white; }
+  #main-nav .navbar-toggler:hover {
+    color: white; }
+  #main-nav .navbar-toggler .icon-bar {
+    color: white; }
+
+#main-nav #navbarSupportedContent {
+  margin-right: 45px;
+  color: white; }
+  #main-nav #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    transition: all .3s;
+    padding: 15px 15px; }
+    #main-nav #navbarSupportedContent .navbar-nav .nav-item .nav-link:hover {
+      color: #139ea0; }
+
+#main-nav.scroll {
+  background-color: rgba(95, 158, 160, 0.7); }
+  #main-nav.scroll #navbarSupportedContent .navbar-nav .nav-item .nav-link:hover {
+    color: #13434c; }
+
+#main-header {
+  background-image: url(../img/5850916365_24d9a56ba0_b.jpg);
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  #main-header .header-mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.6); }
+    #main-header .header-mask .main-header-content {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%; }
+      #main-header .header-mask .main-header-content h1 {
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 3rem;
+        padding: 20px 30px;
+        font-weight: bold; }
+      #main-header .header-mask .main-header-content h2 {
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 1.5rem;
+        padding: 20px 30px; }
+        #main-header .header-mask .main-header-content h2 .fa {
+          color: white;
+          padding-right: 10px;
+          transition: all 0.3s; }
+          #main-header .header-mask .main-header-content h2 .fa:hover {
+            color: cadetblue;
+            transform: rotate(360deg); }
+
+#about {
+  margin-top: 20px;
+  font-family: 'Muli', sans-serif; }
+  #about #about-header {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    font-size: 2rem; }
+
+#offer {
+  margin-top: 20px; }
+  #offer #offer-header {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    font-size: 2rem; }
+  #offer .offer-p {
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    color: #13434c; }
+
+#contact {
+  background-color: cadetblue;
+  height: 100%;
+  position: relative; }
+  #contact .contact-header {
+    padding-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif; }
+  #contact .container-contact {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    #contact .container-contact .contact-data {
+      font-size: 1.5rem;
+      color: white;
+      font-family: 'Muli', sans-serif; }
+    #contact .container-contact .form-control {
+      margin-top: 10px;
+      border: cadetblue solid 2px; }
+      #contact .container-contact .form-control:focus {
+        border: #13434c solid 2px; }
+    #contact .container-contact .submit-contact {
+      margin-top: 15px;
+      color: white;
+      font-family: 'Muli', sans-serif;
+      font-weight: bold;
+      background-color: #13434c;
+      border: white solid 2px; }
+      #contact .container-contact .submit-contact:hover {
+        color: #13434c;
+        background-color: white;
+        border: #13434c solid 2px; }
