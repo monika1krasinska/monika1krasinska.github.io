@@ -119,3 +119,9 @@ body {
         color: #13434c;
         background-color: white;
         border: #13434c solid 2px; }
+
+.place-header {
+  padding-top: 30px;
+  color: cadetblue;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif; }
