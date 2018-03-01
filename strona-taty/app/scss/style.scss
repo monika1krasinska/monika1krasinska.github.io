@@ -117,27 +117,28 @@ body {
         color: rgba(95, 158, 160, 1);
         font-weight: bold;
         font-family: 'Muli',
-                sans-serif;
+        sans-serif;
         font-size: 2rem;
 
     }
 
 
 }
-#offer{
-     margin-top: 20px;
-    #offer-header{
-         color: rgba(95, 158, 160, 1);
+
+#offer {
+    margin-top: 20px;
+    #offer-header {
+        color: rgba(95, 158, 160, 1);
         font-weight: bold;
         font-family: 'Muli',
-                sans-serif;
+        sans-serif;
         font-size: 2rem;
     }
-    .offer-p{
+    .offer-p {
         padding-top: 10px;
         font-weight: bold;
         font-family: 'Muli',
-                sans-serif;
+        sans-serif;
         color: rgba(19, 67, 76, 1);
     }
 }
@@ -157,7 +158,7 @@ body {
         padding-top: 30px;
         padding-bottom: 30px;
         .contact-data {
-            font-size:1.5rem;
+            font-size: 1.5rem;
             color: white;
             font-family: 'Muli',
             sans-serif;
@@ -185,10 +186,32 @@ body {
         }
     }
 }
-.place-header{
-     padding-top: 30px;
+
+#place {
+    margin-bottom: 20px;
+    .place-header {
+        padding-top: 30px;
         color: rgba(95, 158, 160, 1);
         font-weight: bold;
         font-family: 'Muli',
         sans-serif;
+    }
+    .google-maps {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+        iframe {
+            position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        }
+    }
 }

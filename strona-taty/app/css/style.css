@@ -120,8 +120,26 @@ body {
         background-color: white;
         border: #13434c solid 2px; }
 
-.place-header {
-  padding-top: 30px;
-  color: cadetblue;
-  font-weight: bold;
-  font-family: 'Muli', sans-serif; }
+#place {
+  margin-bottom: 20px; }
+  #place .place-header {
+    padding-top: 30px;
+    color: cadetblue;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif; }
+  #place .google-maps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden; }
+    #place .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important; }
